@@ -1,15 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
-ll n, k;
-ll weight(ll l, ll r){
-    return l > r;
-}
 ll f(ll l, ll r, ll k){
     if (l == r)  return l;
     ll m = (l + r) >> 1, nk = (k + 1) >> 1;
-    if (k % 2)  return f(l, m + weight(l, r), nk);
-    return f(r, m + weight(r, l), nk);
+    if (k % 2)  return f(l, m + (l > r), nk);
+    return f(r, m + (r > l), nk);
 }
 ll solve(){
     cin >> n >> k;
