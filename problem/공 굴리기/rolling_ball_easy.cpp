@@ -22,8 +22,13 @@ ll solve_easy(ll n, ll k){
     }
     return pos;
 }
+void print_answer(ll value){
+    if (!value)    return;
+    print_answer(value / 2);
+    cout << value << " ";
+}
 int main(){
   cin >> n >> k;
-  cout << solve_easy(n, k);
+  print_answer(solve_easy(n, k));
   return 0;
 }
