@@ -20,8 +20,13 @@ ll solve(){
         k -= 1 << i;
     }
 }
+void print_answer(ll value){
+    if (!value)    return;
+    print_answer(value / 2);
+    cout << value << " ";
+}
 int main(){
     cin.tie(0); ios_base::sync_with_stdio(false);
-    cout << solve();
+    print_answer(solve());
     return 0;
 }
