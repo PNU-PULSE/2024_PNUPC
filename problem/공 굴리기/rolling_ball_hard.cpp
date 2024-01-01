@@ -4,7 +4,7 @@ using ll = long long;
 ll f(ll l, ll r, ll k){
     if (l == r)  return l;
     ll m = (l + r) >> 1, nk = (k + 1) >> 1;
-    if (k % 2)  return f(l, m + (l > r), nk);
+    if (k & 1)  return f(l, m + (l > r), nk);
     return f(r, m + (r > l), nk);
 }
 ll solve(){
