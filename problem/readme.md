@@ -4,6 +4,7 @@
 
 1. markdown 파일로 올릴 것. notion으로 작성 추천
 2. https://github.com/ucpcc/problemsetting-guidelines 를 참고해서 지문을 작성할 것
+3. (권장) 맞춤법 검사기를 돌려보시는 것을 추천합니다.
    
 문제에 올려야 하는 것
 
