@@ -21,6 +21,7 @@ int main(void)
     cin.tie(0); cout.tie(0);
 
     queue<Point> q;
+    bool flag = 0;
 
     cin >> N >> M >> T;
 
@@ -63,9 +64,12 @@ int main(void)
         for(int col = 1; col <= M; ++col) {
             if(chk[row][col]) continue;
 
+            flag = 1;
             cout << row << ' ' << col << '\n';
         }
     }
+
+    if(!flag) cout << -1;
 
     return 0;
 }
