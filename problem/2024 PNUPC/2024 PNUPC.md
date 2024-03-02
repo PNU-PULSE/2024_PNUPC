@@ -25,14 +25,14 @@ $S$를 산지니의 요구대로 변환되는 문자열, $T$를 성빈이 만든
 ## Input
 
 ```
-PNUPC IS GOOD
+PNU CODE RACE IS GOOD
 
 ```
 
 ## Output
 
 ```
-NO
+YES
 
 ```
 
@@ -43,4 +43,4 @@ NO
 
 ## 풀이
 
-길이가 달라질 일도 없고, 문제를 생각해보면 0을 출력하면 항상 답이 됨을 알 수 있다.
+문제를 잘 읽어보면 가장 앞이 PNU CODE RACE가 아니면 YES, 아니면 NO다.
