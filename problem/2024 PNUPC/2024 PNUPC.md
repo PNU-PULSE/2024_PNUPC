@@ -4,7 +4,7 @@
 
 2024년에 드디어 PNUPC(부산대학교 프로그래밍 경진대회)가 열리게 됐다. 2023년까지는 PNU CODE RACE라는 이름으로 대회가 열렸지만, 산지니가 CODE RACE라는 명칭이 마음에 들지 않는다는 이유로 마음대로 바꾸어 버렸다. 어쨌든, 산지니는 PNUPC의 개최를 기념하여 PNUPC 만들기 대회를 개최했다.
 
-PNUPC 만들기 대회란, 문자열의 일정 부분을 잘라내서 $PNUPC$라는 연속된 부분 문자열을 최대한 많이 만드는 대회다. 예를 들어, $PNNNUUUUUSSPPC$ 라는 문자열이 주어질 때, $P + NN + N + U + UUUU + SSP + P + C$로 나눈 뒤, $NN$, $UUUU$, $SSP$를 제거해서 $PNUPC$를 하나 얻을 수 있다. 또 다른 예로는, $PNNUPCPPNUPC$는 $P + N + N + U + P + C + P + P + N + U + P + C$로 나눈 뒤, $2$번째에 위치한 $N$과 $7$번째에 위치한 $P$를 제거하면 $PNUPCPNUPC$로 PNUPC를 2개 만들 수 있다. 
+PNUPC 만들기 대회란, 문자열을 여러 부분으로 나눈뒤, 나눈 부분 중 일부를 제거하고 다시 붙여서 $PNUPC$라는 연속된 부분 문자열을 최대한 많이 만드는 대회다. 예를 들어, $PNNNUUUUUSSPPC$ 라는 문자열이 주어질 때, $P + NN + N + U + UUUU + SSP + P + C$로 나눈 뒤, $NN$, $UUUU$, $SSP$를 제거해서 $PNUPC$를 하나 얻을 수 있다. 또 다른 예로는, $PNNUPCPPNUPC$는 $P + N + N + U + P + C + P + P + N + U + P + C$로 나눈 뒤, $2$번째에 위치한 $N$과 $7$번째에 위치한 $P$를 제거하면 $PNUPCPNUPC$로 PNUPC를 2개 만들 수 있다. 
 
 문자열이 주어졌을 때, 주어진 문자열에서 얻을 수 있는 최대 $PNUPC$의 개수를 구해주자.
 
