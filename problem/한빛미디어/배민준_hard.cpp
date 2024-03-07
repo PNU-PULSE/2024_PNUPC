@@ -17,12 +17,15 @@ void Solve() {
         }
         else {
             int answer=0;
-            int bp = 0;
-            for(auto p : ms) {
-                if(2*bp<=p) {
-                    bp = p;
-                    answer++;
-                }
+            if(ms.empty()) {
+                cout << 0 << endl;
+                return;
+            }
+            auto curIter = ms.begin();
+            while(true) {
+                auto nextIter = ms.lower_bound(*curIter * 2);
+                if(nextIter==ms.end()) break;
+                answer++;
             }
             answer++;
             cout << answer << endl;
