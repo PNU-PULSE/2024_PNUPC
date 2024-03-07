@@ -13,7 +13,9 @@ void Solve() {
         }
         else if(op==2) {
             cin >> p;
-            ms.erase(p);
+            if(ms.contains(p)) {
+                ms.erase(ms.find(p));
+            }
         }
         else {
             int answer=0;
